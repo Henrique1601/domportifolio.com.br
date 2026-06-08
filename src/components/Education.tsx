@@ -35,7 +35,7 @@ export function Education() {
         >
           <span className="eyebrow bg-accent/10 text-accent mb-6">Formação</span>
           <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-text mb-12">
-            Educação & <span className="italic text-accent">Cursos</span>
+            Educação & <span className="text-accent">Cursos</span>
           </h2>
         </div>
 

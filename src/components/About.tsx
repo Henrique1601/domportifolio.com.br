@@ -14,7 +14,7 @@ export function About() {
         >
           <span className="eyebrow bg-accent/10 text-accent mb-6">Quem Sou Eu</span>
           <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-text mb-10">
-            Sobre <span className="italic text-accent">mim</span>
+            Sobre <span className="text-accent">mim</span>
           </h2>
           <div className="double-bezel p-2">
             <div className="double-bezel-inner p-8 md:p-10 space-y-5">

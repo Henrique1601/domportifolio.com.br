@@ -30,7 +30,7 @@ export function Branding() {
         >
           <span className="eyebrow bg-accent/10 text-accent mb-6">Identidade Visual</span>
           <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-text mb-12">
-            Projetos de <span className="italic text-accent">Branding</span>
+            Projetos de <span className="text-accent">Branding</span>
           </h2>
         </div>
 
@@ -67,7 +67,7 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
               className="button-island bg-text/5 text-text group text-xs ml-auto"
             >
               <span>Ver projeto</span>
-              <span className="w-6 h-6 rounded-full bg-text/5 flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-active:scale-[0.98]">
+              <span className="w-6 h-6 rounded-full bg-text/5 flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-active:scale-[0.98]" aria-hidden="true">
                 <ArrowUpRight size={12} weight="bold" />
               </span>
             </a>
@@ -80,6 +80,7 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
           <img
             src={project.img}
             alt={project.title}
+            loading="lazy"
             className="w-full h-full object-cover rounded-xl"
           />
         </div>

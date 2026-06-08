@@ -19,7 +19,7 @@ export function Hero() {
             <span className="eyebrow bg-accent/10 text-accent mb-6">Design & Ilustração</span>
 
             <h1 className="font-serif text-[clamp(3rem,7vw,5.5rem)] leading-[0.95] tracking-[-0.03em] text-text mt-4 mb-6">
-              Daniel — Criando <span className="italic text-accent">narrativas visuais</span> que conectam
+              Daniel — Criando <span className="text-accent">narrativas visuais</span> que conectam
             </h1>
 
             <p className="text-text-muted text-lg leading-relaxed max-w-[520px] mb-10">
@@ -31,7 +31,7 @@ export function Hero() {
               className="button-island bg-text text-white group"
             >
               <span>Conheça meu trabalho</span>
-              <span className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:scale-105 group-active:scale-[0.98]">
+              <span className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:scale-105 group-active:scale-[0.98]" aria-hidden="true">
                 <ArrowUpRight size={14} weight="bold" className="text-white" />
               </span>
             </a>

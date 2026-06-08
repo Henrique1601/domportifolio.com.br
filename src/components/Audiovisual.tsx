@@ -16,7 +16,7 @@ export function Audiovisual() {
         >
           <span className="eyebrow bg-accent/10 text-accent mb-6">Audiovisual</span>
           <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-text mb-12">
-            Motion & <span className="italic text-accent">Vídeo</span>
+            Motion & <span className="text-accent">Vídeo</span>
           </h2>
         </div>
 

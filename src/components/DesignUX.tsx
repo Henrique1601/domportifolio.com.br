@@ -14,7 +14,7 @@ export function DesignUX() {
         >
           <span className="eyebrow bg-accent/10 text-accent mb-6">Design | UX</span>
           <h2 className="font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.05] tracking-[-0.02em] text-text mb-12">
-            Experiência & <span className="italic text-accent">Interface</span>
+            Experiência & <span className="text-accent">Interface</span>
           </h2>
         </div>
 
@@ -36,7 +36,7 @@ export function DesignUX() {
           <div className="lg:col-span-2 double-bezel p-1.5">
             <div className="double-bezel-inner overflow-hidden p-2 h-full">
               <img
-                src="/assets/images/Secao design ux .png"
+                src="/assets/images/Secao design ux .png" loading="lazy"
                 alt="Seção Design UX"
                 className="w-full h-full object-cover rounded-xl"
               />

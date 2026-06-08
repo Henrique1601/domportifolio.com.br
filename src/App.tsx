@@ -15,7 +15,7 @@ function App() {
     <ToastProvider>
       <div className="film-grain" />
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <About />
         <Education />

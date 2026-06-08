@@ -30,6 +30,15 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  useEffect(() => {
+    if (!open) return
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [open])
+
   return (
     <>
       <nav
@@ -63,14 +72,20 @@ export function Navbar() {
           <button
             onClick={() => setOpen(!open)}
             className="flex md:hidden items-center justify-center w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-black/10 cursor-pointer"
-            aria-label="Menu"
+            aria-label={open ? 'Fechar menu' : 'Abrir menu'}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
           >
-            {open ? <X size={16} weight="bold" /> : <List size={16} weight="bold" />}
+            <span aria-hidden="true">{open ? <X size={16} weight="bold" /> : <List size={16} weight="bold" />}</span>
           </button>
         </div>
       </nav>
 
       <div
+        id="mobile-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Navegação do portfólio"
         className={`fixed inset-0 z-40 flex items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] ${
           open
             ? 'opacity-100 pointer-events-auto'

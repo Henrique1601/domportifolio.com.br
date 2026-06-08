@@ -35,7 +35,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   return (
     <ToastContext.Provider value={{ show }}>
       {children}
-      <div className="fixed top-6 right-6 z-[100] flex flex-col gap-3 pointer-events-none">
+      <div className="fixed top-6 right-6 z-[100] flex flex-col gap-3 pointer-events-none" role="status" aria-live="polite">
         {toasts.map((toast) => (
           <div
             key={toast.id}
@@ -43,12 +43,12 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
             className="double-bezel p-[1px] w-[340px] pointer-events-auto cursor-pointer animate-slideDown"
           >
             <div className="double-bezel-inner px-4 py-3.5 flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+              <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center shrink-0" aria-hidden="true">
                 <CheckCircle size={16} className="text-accent" weight="fill" />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-text text-sm font-medium truncate">{toast.message}</p>
-                <p className="text-text-muted text-[11px]">Seu cliente de e-mail foi aberto</p>
+                <p className="text-text-muted text-[11px]">Mensagem enviada com sucesso</p>
               </div>
             </div>
           </div>
