@@ -4,3 +4,4 @@ dist
 *.local
 /CLAUDE.md
 AGENTS.md
+.vercel

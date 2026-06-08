@@ -5,13 +5,13 @@ const projects = [
   {
     title: 'Camookie',
     desc: 'Projeto completo de identidade visual para a marca Camookie, incluindo logotipo, paleta de cores, tipografia institucional e materiais gráficos. Uma identidade que traduz a personalidade única da marca através de elementos visuais estratégicos.',
-    img: 'assets/images/Projeto camookie.png',
+    img: '/assets/images/Projeto camookie.png',
     tag: 'Branding',
   },
   {
     title: 'Moves Dance',
     desc: 'Quem somos? A Moves é um coletivo de dança que acredita no movimento como forma de expressão, conexão e transformação. Atuamos com aulas presenciais e videoaulas para todas as idades, unindo técnica, criatividade e acessibilidade. Nosso objetivo é democratizar a dança, criando um espaço onde qualquer pessoa — do iniciante ao avançado — possa evoluir, se expressar e fazer parte de uma comunidade que vive a dança de forma intensa e verdadeira.',
-    img: 'assets/images/moves dance.png',
+    img: '/assets/images/moves dance.png',
     tag: 'Branding',
   },
 ]

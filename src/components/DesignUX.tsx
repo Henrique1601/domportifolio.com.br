@@ -36,7 +36,7 @@ export function DesignUX() {
           <div className="lg:col-span-2 double-bezel p-1.5">
             <div className="double-bezel-inner overflow-hidden p-2 h-full">
               <img
-                src="assets/images/Secao design ux .png"
+                src="/assets/images/Secao design ux .png"
                 alt="Seção Design UX"
                 className="w-full h-full object-cover rounded-xl"
               />

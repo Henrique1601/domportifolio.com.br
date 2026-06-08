@@ -42,7 +42,7 @@ export function Hero() {
           <div className="double-bezel p-1.5">
             <div className="double-bezel-inner overflow-hidden">
               <img
-                src="assets/images/Logo.png"
+                src="/assets/images/Logo.png"
                 alt="Daniel"
                 className="w-full h-full object-cover"
               />

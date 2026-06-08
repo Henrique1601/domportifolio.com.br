@@ -21,7 +21,7 @@ export function Illustration() {
         <div className="double-bezel p-1.5">
           <div className="double-bezel-inner overflow-hidden p-2">
             <img
-              src="assets/images/secao Ilustracao.png"
+              src="/assets/images/secao Ilustracao.png"
               alt="Seção Ilustração"
               className="w-full rounded-xl object-cover transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:scale-[1.02]"
             />
